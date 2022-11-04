@@ -1,0 +1,88 @@
+Youtube
+
+{
+  name: 'Epic Sax',
+  description: 'Provided to YouTube by TuneCore Epic Sax · JR Serpent The Best Of: Jr Serpent (2017 -2019) ℗ 2017 NEON SERPENTS ...',
+  rawData: YouTubeVideo {
+    id: '4jSaK-YZLOY',
+    url: 'https://www.youtube.com/watch?v=4jSaK-YZLOY',
+    type: 'video',
+    title: 'Epic Sax',
+    description: 'Provided to YouTube by TuneCore Epic Sax · JR Serpent The Best Of: Jr Serpent (2017 -2019) ℗ 2017 NEON SERPENTS ...',
+    durationRaw: '1:58',
+    durationInSec: 118,
+    uploadedAt: undefined,
+    liveAt: undefined,
+    upcoming: undefined,
+    views: 9537,
+    thumbnails: [ [YouTubeThumbnail], [YouTubeThumbnail] ],
+    channel: YouTubeChannel {
+      type: 'channel',
+      name: 'Jr Serpent - Topic',
+      verified: false,
+      artist: false,
+      id: 'UCquTUC9laWbTlBagjc4OpHg',
+      url: 'https://www.youtube.com/channel/UCquTUC9laWbTlBagjc4OpHg',
+      icons: [Array],
+      subscribers: null
+    },
+    likes: 0,
+    live: false,
+    private: false,
+    tags: [],
+    discretionAdvised: undefined,
+    music: [],
+    chapters: []
+  },
+  duration: { formatted: '1:58', raw: 118 },
+  url: 'https://www.youtube.com/watch?v=4jSaK-YZLOY',
+  thumbnail: 'https://i.ytimg.com/vi/4jSaK-YZLOY/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA1npPerT4yLoNM6OkkGjjEI9aohA',
+  author: {
+    name: 'Jr Serpent - Topic',
+    thumbnail: 'https://yt3.ggpht.com/FilIdjy1Cf7yGa4uRZ3NlxMNfAAgXE1DPTyThiOlvgGvx8f-fihfALRJUCDH2u1bwm9pMRYm2g=s68-c-k-c0x00ffffff-no-rj'
+  },
+  source: 'YouTube',
+  requester: 'BonoJansen_',
+  changeableVolume: true,
+  currentTime: '0:08'
+}
+
+
+
+spotify
+
+{
+  name: 'BED',
+  description: null,
+  rawData: {
+    type: 'track',
+    name: 'BED',
+    uri: 'spotify:track:0siYMEsGrzzzlWLXK5zJfS',
+    id: '0siYMEsGrzzzlWLXK5zJfS',
+    title: 'BED',
+    artists: [ [Object], [Object], [Object] ],
+    coverArt: { extractedColors: [Object], sources: [Array] },
+    releaseDate: { isoString: '2021-02-26T00:00:00Z' },
+    duration: 178087,
+    maxDuration: 178087,
+    isPlayable: true,
+    isExplicit: false,
+    audioPreview: {
+      url: 'https://p.scdn.co/mp3-preview/b147c284e58e4d2b519bb56cb60406d813e98ec8',
+      format: 'MP3_96'
+    },
+    hasVideo: false,
+    relatedEntityUri: 'spotify:artist:6DgP9otnZw5z6daOntINxp',
+    external_urls: {
+      spotify: 'https://open.spotify.com/track/0siYMEsGrzzzlWLXK5zJfS'
+    }
+  },
+  duration: { formatted: '2:58', raw: 178 },
+  url: 'https://open.spotify.com/track/0siYMEsGrzzzlWLXK5zJfS',
+  thumbnail: 'https://i.scdn.co/image/ab67616d0000b273b06c09b9f72389ee7f1cbd6b',
+  author: { name: 'Joel Corry', thumbnail: null },
+  source: 'Spotify',
+  requester: 'BonoJansen_',
+  changeableVolume: true,
+  currentTime: '0:13'
+}

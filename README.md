@@ -35,6 +35,7 @@ Commands included in this bot:
 | Command name        | Command alt       | Explanation                                                           |
 | ------------------- |:-----------------:|:---------------------------------------------------------------------:|
 | Addlist ```url```   | none              | add a list of songs by providing the ```url```                        |
+| author              | botinfo           | get the link to all of my platforms                                   |
 | nowplaying          |  np               | see what track is playing                                             |
 | pause               | none              | pause the playing song                                                |
 | play ```url```      | p ```url```       | play a song by providing the ```url``` to the song (lists also works) |

@@ -1,3 +1,4 @@
+//a function needed by the progressbar creater
 function buildTimeCode(duration) {
     const items = Object.keys(duration);
     const required = ["days", "hours", "minutes", "seconds"];

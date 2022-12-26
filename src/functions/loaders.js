@@ -1,3 +1,4 @@
+//functions used to load all commands and events into the bot
 const fs = require("fs");
 const path = require("path");
 const srcPath = path.join(__dirname, "../");

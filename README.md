@@ -1,28 +1,66 @@
+## 🤖 This discord bot is based on [Dismusic](https://www.npmjs.com/package/dismusic) 
 
-## This bot is based on [Dismusic](https://www.npmjs.com/package/dismusic)
+[![Button npm package]](https://www.npmjs.com/package/dismusic)
 
-That package is made by this awesome dude: [retrouser955](https://github.com/retrouser955)
+That package is made by [retrouser955](https://github.com/retrouser955). 
+This bot is based on discord.js V14.6.0 and dismusic V2.1.1
+
+[![Button github retrouser955]](https://github.com/retrouser955)
+
+## 📝 Usage/Configuration
 
 
-
-
-
-
-## Usage/Configuration
-
-This bot can be used by anyone. 
 
 Configuring this bot isn't hard. Just fill in the config.json file.
-Create your discord bot [here](https://discord.com/developers/applications) and paste the token in the config file.
-Get your spotify clientId and clientSecret [here](https://developer.spotify.com/dashboard/applications). 
-And grab the id and secret.
+If you don't own a discord bot account, create your discord bot on the discord developer portal and copy-paste the token in the config file.
 
+[![Button discord developer portal]](https://discord.com/developers/applications)
 
+Make sure to install all used NPM packages in the root folder of the bot
+```bash
+npm install
+```
+If this doesn't work, please try this
+```bash
+npm install @discordjs/opus@0.8.0 discord.js@14.6.0 dismusic@2.1.1 moment@2.29.4 opusscript@0.0.8
+```
+To start the bot, run ``` node .``` in the terminal open from the root folder
 
 This bot may be update when a new version of [Dismusic](https://www.npmjs.com/package/dismusic) is released. 
 
+## 📝 Supported commands
+The default prefix is: ```!```. 
+Commands included in this bot:
 
-## 🔗 My links
+| Command name        | Command alt       | Explanation                                                           |
+| ------------------- |:-----------------:|:---------------------------------------------------------------------:|
+| Addlist ```url```   | none              | add a list of songs by providing the ```url```                        |
+| nowplaying          |  np               | see what track is playing                                             |
+| pause               | none              | pause the playing song                                                |
+| play ```url```      | p ```url```       | play a song by providing the ```url``` to the song (lists also works) |
+| resume              | none              | resume the paused song                                                |
+| skip                | none              | skip the current playing song                                         |
+| stop / quit         | quit              | stop the music entirely                                               |
+| trackinfo           | info              | get all the info about the playing track                              |
+| volume ```volume``` |  vol ```volume``` | change the volume to the given ```volume```                           |
 
-- Support my work  through [Buy Me A Coffee](https://www.buymeacoffee.com/bonojansen)
-- Dismusic support server: [Feel free to join here](https://discord.gg/uWfMZYju8c)
+
+
+## 🔗 links
+
+- Support my work  through
+
+[![Button Buy Me A Coffee]](https://www.buymeacoffee.com/bonojansen)
+
+- Dismusic support server:
+
+[![Button Join Suppor Server]](https://discord.gg/uWfMZYju8c)
+
+
+
+
+[Button npm package]: https://img.shields.io/badge/DisMusic-CB3837?style=for-the-badge&logoColor=white&logo=npm
+[Button github retrouser955]: https://img.shields.io/badge/Retrouser995-000000?style=for-the-badge&logoColor=white&logo=github
+[Button discord developer portal]: https://img.shields.io/badge/Discord_developer_portal-7289DA?style=for-the-badge&logoColor=white&logo=Discord
+[Button Buy Me A Coffee]: https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logoColor=black&logo=buymeacoffee
+[Button Join Suppor Server]: https://img.shields.io/badge/Feel_free_to_join_here-7289DA?style=for-the-badge&logoColor=white&logo=Discord

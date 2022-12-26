@@ -1,3 +1,4 @@
+//a function needed by the progressbar creater
 function parseMS(milliseconds) {
 
     if (isNaN(milliseconds)) milliseconds = 0;

@@ -1,15 +1,28 @@
 {
-    "scripts": {
-        "start": "nodemon index.js"
-    },
-    "dependencies": {
-        "@discordjs/opus": "^0.8.0",
-        "discord.js": "^14.6.0",
-        "dismusic": "^2.0.5",
-        "icy": "^2.1.0",
-        "isomorphic-unfetch": "^3.1.0",
-        "moment": "^2.29.4",
-        "opusscript": "^0.0.8",
-        "spotify": "^0.3.0"
-    }
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "@discordjs/opus": "^0.8.0",
+    "discord.js": "^14.6.0",
+    "dismusic": "^2.1.1",
+    "moment": "^2.29.4",
+    "opusscript": "^0.0.8"
+  },
+  "name": "dismusic-test-bot",
+  "description": "That package is made by retrouser955. This bot is based on discord.js V14.6.0 and dismusic V2.1.1",
+  "version": "2.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BonoJansen/Dismusic-Test-Bot.git"
+  },
+  "author": "https://github.com/BonoJansen",
+  "authorPackage": "https://github.com/retrouser955",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BonoJansen/Dismusic-Test-Bot/issues"
+  },
+  "homepage": "https://github.com/BonoJansen/Dismusic-Test-Bot#readme"
 }

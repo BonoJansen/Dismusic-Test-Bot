@@ -1,9 +1,9 @@
+//a function used to make a progress bar
 const getPlayerTimestamp = require('./getPlayerTimestamp')
 async function createProgressBar (currentTrack, timecodes = true) {
 
     if(!currentTrack) return console.error('No valid currentTrack given "CreateProgressBar"')
 
-    console.log(currentTrack)
     const length = 15;
     currentTrack.duration.milis = currentTrack.duration.raw * 1000
     const currentTimeArray = currentTrack.currentTime.split(":")
@@ -26,14 +26,14 @@ async function createProgressBar (currentTrack, timecodes = true) {
         const bar = line.repeat(length - 1).split("");
         bar.splice(index, 0, indicator);
         if (timecodes) {
-            const timestamp = await getPlayerTimestamp(queue);
+            const timestamp = await getPlayerTimestamp(currentTrack);
             return `${timestamp.current} ┃ ${bar.join("")} ┃ ${timestamp.end}`;
         } else {
             return `${bar.join("")}`;
         }
     } else {
         if (timecodes) {
-            const timestamp = await getPlayerTimestamp(queue);
+            const timestamp = await getPlayerTimestamp(currentTrack);
             return `${timestamp.current} ┃ ${indicator}${line.repeat(length - 1)} ┃ ${timestamp.end}`;
         } else {
             return `${indicator}${line.repeat(length - 1)}`;

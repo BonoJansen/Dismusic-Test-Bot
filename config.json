@@ -1,12 +1,4 @@
 {
-    "prefix" : "!",
-    "discord": {
-      "token":"",
-      "devId":  "624934684597551116"
-    },
-    "spotify" : {
-      "clientId": "519a0a90b5ca4ba695b47f1feb8b1538",
-      "clientSecret":"a98c90efc61b491eb7b7ce25faa371bd",
-      "refreshToken": ""
-    }
-  }
+  "prefix" : "!",
+  "token":"your token here" 
+}

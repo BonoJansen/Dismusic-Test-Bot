@@ -1,7 +1,8 @@
+//a function needed to make the nowplaying command embed
 const parseMS = require('./parseMS')
 const buildTimeCode = require('./BuildTimeCode')
 
-async function getPlayerTimestamp (currentTime) {
+async function getPlayerTimestamp (currentTrack) {
 
     if(!currentTrack) return console.error('No valid currentTrack given "getPlayerTimestamp"')
 

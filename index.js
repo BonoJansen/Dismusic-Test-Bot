@@ -14,14 +14,10 @@ const config = require("./config.json");
 const { eventLoader, commandLoader } = require("./src/functions/loaders");
 const { Player } = require("dismusic");
 client.commands = new Discord.Collection();
-client.player = new Player(client, {
-  spotify: {
-    clientId: config.spotify.clientId,
-    clientSecret: config.spotify.clientSecret,
-  },
-});
+client.player = new Player(client);
+console.log("Spotify data is no longer needed, you can ignore the -> [Dismusic Warning]")
 
 eventLoader(client);
 commandLoader(client);
 
-client.login(config.discord.token);
+client.login(config.token);

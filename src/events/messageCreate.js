@@ -1,3 +1,4 @@
+//Gets fired when a message is send in a channel the bot can see.
 const { prefix } = require("../../config.json");
 module.exports = (client) => {
   client.on("messageCreate", async (message) => {

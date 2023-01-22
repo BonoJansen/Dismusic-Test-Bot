@@ -61,7 +61,7 @@ Commands included in this bot:
 
 
 [Button npm package]: https://img.shields.io/badge/DisMusic-CB3837?style=for-the-badge&logoColor=white&logo=npm
-[Button github retrouser955]: https://img.shields.io/badge/Retrouser995-000000?style=for-the-badge&logoColor=white&logo=github
+[Button github retrouser955]: https://img.shields.io/badge/Retrouser955-000000?style=for-the-badge&logoColor=white&logo=github
 [Button discord developer portal]: https://img.shields.io/badge/Discord_developer_portal-7289DA?style=for-the-badge&logoColor=white&logo=Discord
 [Button Buy Me A Coffee]: https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=for-the-badge&logoColor=black&logo=buymeacoffee
 [Button Join Suppor Server]: https://img.shields.io/badge/Feel_free_to_join_here-7289DA?style=for-the-badge&logoColor=white&logo=Discord

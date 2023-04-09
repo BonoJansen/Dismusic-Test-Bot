@@ -1,14 +1,18 @@
 const config = require("../../../config.json");
-const { EmbedBuilder} = require('discord.js')
+const { EmbedBuilder, SlashCommandBuilder } = require('discord.js')
 const createProgressBar = require('../../functions/createProgressBar')
 const getPlayerTimestamp = require('../../functions/getPlayerTimestamp')
 module.exports = {
-  cmd: ["nowplaying", "np"],
-  run: async (client, message, args, cmd) => {
-    if(!message.member.voice.channel) return message.reply({content : "<a:crossmark:1055843467760242738> You need to be in a voicechannel to run this command."});
+  cmd: [`${__filename.toLowerCase().split('music\\')[1].slice(0,[1].length-4)}`],
+  slashcommand : 
+    new SlashCommandBuilder()
+      .setName(`${__filename.toLowerCase().split('music\\')[1].slice(0,[1].length-4)}`)
+      .setDescription(`see what track is playing`),
+  run: async (client, interaction, options, cmd) => {
+    if(!interaction.member.voice.channel) return interaction.reply({content : "<a:crossmark:1055843467760242738> You need to be in a voicechannel to run this command."});
 
-    const queue = await client.player.getQueue(message.guild);
-    if(!queue) return message.reply({content : "<a:crossmark:1055843467760242738> There is not music playing in this server."});
+    const queue = await client.player.getQueue(interaction.guild);
+    if(!queue) return interaction.reply({content : "<a:crossmark:1055843467760242738> There is not music playing in this server."});
     let currentTrack = await queue.getCurrentTrack();
     
 
@@ -26,6 +30,6 @@ module.exports = {
             .setFooter({text : `Discord Bot made by BonoJansen_#3176`, iconURL : "https://cdn.discordapp.com/avatars/624934684597551116/1f8f278896d7147939b2befb3196370c.png"})
             .setTimestamp()
         
-        return message.reply({ embeds : [ embed ]});
+        return interaction.reply({ embeds : [ embed ]});
     }
 }

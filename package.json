@@ -5,15 +5,14 @@
   "dependencies": {
     "@discordjs/opus": "^0.8.0",
     "discord.js": "^14.6.0",
-    "dismusic": "^2.1.1",
+    "dismusic": "^2.1.7",
     "moment": "^2.29.4",
     "opusscript": "^0.0.8"
   },
   "name": "dismusic-test-bot",
-  "description": "That package is made by retrouser955. This bot is based on discord.js V14.6.0 and dismusic V2.1.1",
-  "version": "2.0.0",
+  "description": "That package is made by retrouser955. This bot is based on discord.js V14.6.0 and dismusic V2.1.7",
+  "version": "3.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BonoJansen/Dismusic-Test-Bot.git"

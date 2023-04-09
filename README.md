@@ -3,7 +3,7 @@
 [![Button npm package]](https://www.npmjs.com/package/dismusic)
 
 That package is made by [retrouser955](https://github.com/retrouser955). 
-This bot is based on discord.js V14.6.0 and dismusic V2.1.1
+This bot is based on discord.js V14.6.0 and dismusic V2.1.7
 
 [![Button github retrouser955]](https://github.com/retrouser955)
 
@@ -22,28 +22,28 @@ npm install
 ```
 If this doesn't work, please try this
 ```bash
-npm install @discordjs/opus@0.8.0 discord.js@14.6.0 dismusic@2.1.1 moment@2.29.4 opusscript@0.0.8
+npm install @discordjs/opus@0.8.0 discord.js@14.6.0 dismusic@2.1.7 moment@2.29.4 opusscript@0.0.8
 ```
 To start the bot, run ``` node .``` in the terminal open from the root folder
 
 This bot may be update when a new version of [Dismusic](https://www.npmjs.com/package/dismusic) is released. 
 
 ## 📝 Supported commands
-The default prefix is: ```!```. 
+This bot now includes slashcommands (Text commands no longer supported!!!). 
 Commands included in this bot:
 
-| Command name        | Command alt       | Explanation                                                           |
-| ------------------- |:-----------------:|:---------------------------------------------------------------------:|
-| Addlist ```url```   | none              | add a list of songs by providing the ```url```                        |
-| author              | botinfo           | get the link to all of my platforms                                   |
-| nowplaying          |  np               | see what track is playing                                             |
-| pause               | none              | pause the playing song                                                |
-| play ```url```      | p ```url```       | play a song by providing the ```url``` to the song (lists also works) |
-| resume              | none              | resume the paused song                                                |
-| skip                | none              | skip the current playing song                                         |
-| stop / quit         | quit              | stop the music entirely                                               |
-| trackinfo           | info              | get all the info about the playing track                              |
-| volume ```volume``` |  vol ```volume``` | change the volume to the given ```volume```                           |
+| Command name        | Explanation                                                           |
+| ------------------- |:---------------------------------------------------------------------:|
+| Addlist ```url```   | add a list of songs by providing the ```url```                        |
+| author              | get the link to all of my platforms                                   |
+| nowplaying          | see what track is playing                                             |
+| pause               | pause the playing song                                                |
+| play ```url```      | play a song by providing the ```url``` to the song (lists also works) |
+| resume              | resume the paused song                                                |
+| skip                | skip the current playing song                                         |
+| stop                | stop the music entirely                                               |
+| trackinfo           | get some the info about the playing track                             |
+| volume ```volume``` | change the volume to the given ```volume```                           |
 
 
 

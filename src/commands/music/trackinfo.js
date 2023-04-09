@@ -1,12 +1,16 @@
 const config = require("../../../config.json");
-const { EmbedBuilder } = require('discord.js')
+const { EmbedBuilder, SlashCommandBuilder } = require('discord.js')
 const moment = require('moment')
 module.exports = {
-  cmd: ["trackinfo", "info"],
-  run: async (client, message, args, cmd) => {
-    if(!message.member.voice.channel) return message.reply({content : "<a:crossmark:1055843467760242738> You need to be in a voicechannel to run this command."});
-    const queue = await client.player.getQueue(message.guild);
-    if(!queue) return message.reply({content : "<a:crossmark:1055843467760242738> There is not music playing in this server."});
+  cmd: [`${__filename.toLowerCase().split('music\\')[1].slice(0,[1].length-4)}`],
+  slashcommand : 
+    new SlashCommandBuilder()
+      .setName(`${__filename.toLowerCase().split('music\\')[1].slice(0,[1].length-4)}`)
+      .setDescription(`get some the info about the playing track`),
+  run: async (client, interaction, options, cmd) => {
+    if(!interaction.member.voice.channel) return interaction.reply({content : "<a:crossmark:1055843467760242738> You need to be in a voicechannel to run this command."});
+    const queue = await client.player.getQueue(interaction.guild);
+    if(!queue) return interaction.reply({content : "<a:crossmark:1055843467760242738> There is not music playing in this server."});
     let currentTrack = await queue.getCurrentTrack();
     if(currentTrack.tracks){
         currentTrack.tracks[0].requester = currentTrack.requester
@@ -34,7 +38,7 @@ module.exports = {
         .setColor("#8d3e95")
         .setFooter({text : "Discord Bot made by BonoJansen_#3176", iconURL : "https://cdn.discordapp.com/avatars/624934684597551116/1f8f278896d7147939b2befb3196370c.png"})
         .setTimestamp()
-        return message.reply({ embeds : [ YOUTUBEembed ]});
+        return interaction.reply({ embeds : [ YOUTUBEembed ]});
     } else if(currentTrack.source === "Spotify") {
       const SPOTIFYembed = new EmbedBuilder()
         .setTitle(`Track Info`)
@@ -53,9 +57,9 @@ module.exports = {
         .setColor("#8d3e95")
         .setFooter({text : "Discord Bot made by BonoJansen_#3176", iconURL : "https://cdn.discordapp.com/avatars/624934684597551116/1f8f278896d7147939b2befb3196370c.png"})
         .setTimestamp()
-      return message.reply({ embeds : [ SPOTIFYembed ]});
+      return interaction.reply({ embeds : [ SPOTIFYembed ]});
     } else {
-      return message.reply({ content : ["This song is not yet supported by the **trackinfo** command because it used another search engine as Youtube of Spotify"]});
+      return interaction.reply({ content : ["This song is not yet supported by the **trackinfo** command because it used another search engine as Youtube of Spotify"]});
     }
   }
 };

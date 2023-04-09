@@ -1,8 +1,12 @@
 const config = require("../../../config.json");
-const { EmbedBuilder} = require('discord.js')
+const { EmbedBuilder, SlashCommandBuilder } = require('discord.js')
 const {} = require("dismusic");
 module.exports = {
-  cmd: ["author", "botinfo"],
+  cmd: ["author"],
+  slashcommand : 
+    new SlashCommandBuilder()
+      .setName("author")
+      .setDescription(`Get some info about the author of the bots code`),
   run: async (client, message, args, cmd) => {
     const embed = new EmbedBuilder()
             .setTitle(`The author of this code`)
